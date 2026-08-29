@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import SenderView from "./components/SenderView";
 import ReceiverView from "./components/ReceiverView";
 import { LetterData } from "./types";
+import LZString from "lz-string";
 
 export default function Home() {
   const [receivedData, setReceivedData] = useState<LetterData | null>(null);
@@ -16,7 +17,7 @@ export default function Home() {
 
     if (hash) {
       try {
-        const decoded: LetterData = JSON.parse(decodeURIComponent(atob(hash)));
+        const decoded: LetterData = JSON.parse(LZString.decompressFromEncodedURIComponent(hash));
         setReceivedData(decoded);
       } catch (e) {
         console.error("Invalid pigeon dispatch", e);
