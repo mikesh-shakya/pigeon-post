@@ -132,7 +132,7 @@ export default function ReceiverView({ receivedData }: { receivedData: LetterDat
               
               <div className="mt-24 pt-12 border-t border-[#3d362f] text-center opacity-30 hover:opacity-100 transition-opacity duration-700">
                 <a href="/" className="text-[10px] uppercase font-mono tracking-[0.3em] hover:text-[#d6c9b3] transition-colors">
-                  [ Dispatch your own pigeon ]
+                  [ Wanna send your own pigeon? Click here. ]
                 </a>
               </div>
             </motion.div>

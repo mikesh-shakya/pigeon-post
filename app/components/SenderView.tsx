@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Feather, Copy, Check } from "lucide-react";
 import { LetterData, HistoryItem } from "../types";
 
-const MAX_WEIGHT = 500;
+const MAX_WEIGHT = 2000;
 const SEALS = [
   { name: "Ruby", color: "bg-[#7a1c1c] shadow-[0_0_15px_rgba(122,28,28,0.4)]" },
   { name: "Navy", color: "bg-[#1c2841] shadow-[0_0_15px_rgba(28,40,65,0.4)]" },
